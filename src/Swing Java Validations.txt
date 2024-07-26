@@ -1,0 +1,41 @@
+JAVA EMAIL VALIDATION :
+
+
+         // TODO add your handling code here:
+        
+        String var = emailid.getText();
+        
+        Pattern pattern;
+        Matcher matcher;
+        
+        String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"+"[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+        
+        pattern = Pattern.compile(EMAIL_PATTERN);
+        
+        matcher = pattern.matcher(var);
+        
+        
+        if(matcher.matches())
+        {
+        
+        }
+        else
+        {
+           JOptionPane.showMessageDialog(null, "Envalid Email");
+        }
+        
+*****************************************************************************************************************************
+
+JAVA ONLY NUMBERS :
+
+   char ch = evt.getKeyChar();
+        
+                if(Character.isDigit(ch)){
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "Only numbers are allowed!");
+                    
+                }
+
+*****************************************************************************************************************************       
+    
